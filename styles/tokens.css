@@ -23,6 +23,10 @@
   --step-3: clamp(2rem, 1.4rem + 2.8vw, 3.5rem);
   --step-4: clamp(2.75rem, 1.6rem + 5vw, 5.5rem);
 
+  /* Detail-page hero scale. Sits below --step-4 so the longest project
+     taglines hold to two lines in the hero copy column. */
+  --step-hero: clamp(2rem, 1.3rem + 3.2vw, 2.75rem);
+
   --gutter: clamp(1.25rem, 4vw, 4rem);
   --band: clamp(4rem, 8vw, 8rem);
   --shell: 1400px;

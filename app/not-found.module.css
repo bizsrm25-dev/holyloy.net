@@ -1,0 +1,10 @@
+.page {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: start;
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.title { font-size: var(--step-3); }
+
+.body { color: var(--c-graphite); }

@@ -10,7 +10,7 @@
 }
 
 .tagline {
-  font-size: var(--step-4);
+  font-size: var(--step-hero);
   line-height: 1.05;
   letter-spacing: -0.03em;
 }
@@ -31,5 +31,7 @@
 }
 
 @media (min-width: 900px) {
-  .inner { grid-template-columns: 1fr 1.1fr; }
+  /* Copy leads on a detail page. A narrower copy column pushed the longest
+     taglines to three lines, over the two-line hero limit. */
+  .inner { grid-template-columns: 1.25fr 1fr; }
 }

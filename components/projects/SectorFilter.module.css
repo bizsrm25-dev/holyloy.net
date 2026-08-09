@@ -1,0 +1,35 @@
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.chip {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--c-hairline);
+  border-radius: var(--r-control);
+  background: none;
+  font-family: var(--f-body);
+  font-size: 0.8125rem;
+  color: var(--c-graphite);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--c-ink);
+  color: var(--c-ink);
+}
+
+.on {
+  background: var(--c-red);
+  border-color: var(--c-red);
+  color: #FFFFFF;
+}
+
+.on:hover {
+  background: var(--c-red-press);
+  border-color: var(--c-red-press);
+  color: #FFFFFF;
+}

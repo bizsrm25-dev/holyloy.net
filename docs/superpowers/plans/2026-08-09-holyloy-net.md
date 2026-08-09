@@ -6,7 +6,9 @@
 
 **Architecture:** Next.js App Router, Server Components by default with four client islands (GSAP provider, sector filter, mobile menu, animating blocks). Project detail pages are composed from a discriminated-union block library, so each of the twelve pages is a typed data file rather than hand-built markup. Design tokens live in one CSS file and are the sole source of colour and type values.
 
-**Tech Stack:** Next.js 15.5.20, React 19, TypeScript 5.7 strict, CSS Modules, GSAP 3.13 with `@gsap/react`, `@phosphor-icons/react`, vitest 2.1.8.
+**Tech Stack:** Next.js 16.3, React 19, TypeScript 5.7 strict, CSS Modules, GSAP 3.13 with `@gsap/react`, `@phosphor-icons/react`, vitest 4.
+
+> **Amended during execution.** The plan originally pinned Next 15.5.20 to match `holyloydevelopmentsldt`. That version carried three high-severity advisories fixable only by a major bump, so the project moved to Next 16.3 with the user's approval. Two consequences for Task 1: `next lint` no longer exists, so the `lint` script is `eslint .` against a flat `eslint.config.mjs`; and ESLint stays on 9.x, because `eslint-config-next@16` bundles an `eslint-plugin-react` that breaks on ESLint 10. `npm audit` reports zero vulnerabilities.
 
 **Spec:** `docs/superpowers/specs/2026-08-09-holyloy-net-design.md`. Read it before starting. Where this plan and the spec disagree, the spec wins and the plan is wrong.
 

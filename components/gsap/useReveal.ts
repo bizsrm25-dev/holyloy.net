@@ -29,6 +29,11 @@ export function useReveal<T extends HTMLElement>(options?: { stagger?: number })
           return;
         }
 
+        // immediateRender:false is a safety property, not a preference. With the
+        // default, GSAP writes opacity:0 the moment the tween is built, so if the
+        // ticker never runs (a backgrounded tab, a stalled rAF, a JS error later
+        // in the page) the content stays permanently invisible. Deferring the
+        // from-state means the worst case is content that is simply not animated.
         gsap.fromTo(
           targets,
           { opacity: 0, y: 24 },
@@ -38,7 +43,13 @@ export function useReveal<T extends HTMLElement>(options?: { stagger?: number })
             duration: 0.6,
             stagger,
             ease: "power3.out",
-            scrollTrigger: { trigger: el, start: "top 80%", once: true },
+            immediateRender: false,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 80%",
+              once: true,
+              invalidateOnRefresh: true,
+            },
           },
         );
       },

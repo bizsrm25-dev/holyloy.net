@@ -1467,7 +1467,7 @@ export default function ImageSlot({
   src, alt, ratio = "16 / 9", priority = false,
   sizes = "(max-width: 767px) 100vw, 50vw",
 }: Props) {
-  const pending = process.env.HOLYLOY_IMAGES_PENDING === "1";
+  const pending = process.env.NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING === "1";
 
   return (
     <div className={styles.slot} style={{ aspectRatio: ratio }}>
@@ -3719,7 +3719,7 @@ describe("copy rules", () => {
 });
 
 describe("assets", () => {
-  const pending = process.env.HOLYLOY_IMAGES_PENDING === "1";
+  const pending = process.env.NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING === "1";
 
   it.skipIf(pending)("resolves every referenced image", () => {
     const referenced = new Set([
@@ -3735,7 +3735,7 @@ describe("assets", () => {
 
 - [ ] **Step 3: Run the suite**
 
-Run: `HOLYLOY_IMAGES_PENDING=1 npm test`
+Run: `NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING=1 npm test`
 Expected: every test passes, with the image-resolution test reported as skipped.
 
 If a copy test fails, fix the offending content in `lib/`, not the test. That is the entire point of this suite.

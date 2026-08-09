@@ -373,7 +373,7 @@ the top. Wide, calm compositions with room for text overlay where a section need
 **Blocking behaviour.** Image generation does not block layout work. Every image slot
 renders a sized, labelled placeholder until its asset lands, so the site is buildable
 and reviewable throughout. The content conformance test's image-existence assertion is
-skipped while `HOLYLOY_IMAGES_PENDING=1` is set, and that escape hatch is removed once
+skipped while `NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING=1` is set, and that escape hatch is removed once
 generation completes.
 
 ## 10. Motion

@@ -1,0 +1,44 @@
+:root {
+  --c-red: #DC0000;
+  --c-red-press: #A80000;
+  --c-red-wash: #FFF0F0;
+  --c-ink: #121212;
+  --c-graphite: #3F3F3F;
+  --c-muted: #767676;
+  --c-hairline: #E5E1DD;
+  --c-canvas: #FAF8F6;
+  --c-card: #FFFFFF;
+  --c-night: #101010;
+
+  --r-control: 8px;
+  --r-card: 16px;
+
+  --f-display: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
+  --f-body: var(--font-geist), system-ui, -apple-system, sans-serif;
+  --f-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.5rem, 1.2rem + 1.4vw, 2.25rem);
+  --step-3: clamp(2rem, 1.4rem + 2.8vw, 3.5rem);
+  --step-4: clamp(2.75rem, 1.6rem + 5vw, 5.5rem);
+
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --band: clamp(4rem, 8vw, 8rem);
+  --shell: 1400px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-red: #DC0000;
+    --c-red-press: #A80000;
+    --c-red-wash: #2A0F0F;
+    --c-ink: #F4F2F0;
+    --c-graphite: #B8B4B0;
+    --c-muted: #8A8683;
+    --c-hairline: #2A2A2A;
+    --c-canvas: #0E0E0E;
+    --c-card: #181818;
+    --c-night: #101010;
+  }
+}

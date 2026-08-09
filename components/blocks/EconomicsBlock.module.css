@@ -1,0 +1,28 @@
+.section { padding-block: var(--band); }
+
+.tiles {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.tile {
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--r-card);
+  background: var(--c-red-wash);
+}
+
+.detail { margin-top: 2.5rem; max-width: 640px; }
+
+.rows { display: grid; gap: 0.75rem; }
+
+.row { display: flex; justify-content: space-between; gap: 1rem; }
+
+.label { font-size: 0.875rem; color: var(--c-muted); }
+
+.value {
+  font-family: var(--f-mono);
+  font-size: 0.875rem;
+  color: var(--c-ink);
+  text-align: right;
+}

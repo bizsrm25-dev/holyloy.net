@@ -1,0 +1,33 @@
+.section { padding-block: var(--band); }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.cluster {
+  padding: 1.5rem;
+  border: 1px solid var(--c-hairline);
+  border-radius: var(--r-card);
+  background: var(--c-card);
+}
+
+.title {
+  font-size: var(--step-1);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--c-hairline);
+}
+
+.rows { display: grid; gap: 0.875rem; margin-top: 1rem; }
+
+.row { display: flex; justify-content: space-between; gap: 1rem; }
+
+.label { font-size: 0.875rem; color: var(--c-muted); }
+
+.value {
+  font-family: var(--f-mono);
+  font-size: 0.875rem;
+  color: var(--c-ink);
+  text-align: right;
+}

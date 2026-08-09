@@ -1,0 +1,25 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--r-control);
+  font-family: var(--f-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.button:active { transform: scale(0.98); }
+
+.primary { background: var(--c-red); color: #FFFFFF; }
+.primary:hover { background: var(--c-red-press); }
+
+.secondary {
+  border: 1px solid var(--c-ink);
+  color: var(--c-ink);
+}
+
+.secondary:hover { background: var(--c-ink); color: var(--c-canvas); }

@@ -1,0 +1,18 @@
+.details { border-top: 1px solid var(--c-hairline); }
+
+.summary {
+  padding: 1rem 0;
+  cursor: pointer;
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  list-style: none;
+}
+
+.summary::-webkit-details-marker { display: none; }
+.summary::after { content: " +"; color: var(--c-red); }
+.details[open] .summary::after { content: " -"; }
+
+.body { padding-bottom: 1.5rem; }

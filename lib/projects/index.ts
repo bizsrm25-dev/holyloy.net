@@ -7,6 +7,12 @@ import cementPlant from "./cement-plant";
 import civilEngineering from "./civil-engineering";
 import safetyFootwear from "./safety-footwear";
 import foodTrade from "./food-trade";
+import generalTrading from "./general-trading";
+import pharmaManufacturing from "./pharma-manufacturing";
+import healthcareDevelopment from "./healthcare-development";
+import smartTaxi from "./smart-taxi";
+import manpowerSourcing from "./manpower-sourcing";
+import digitalAdvertising from "./digital-advertising";
 
 export const PROJECTS: Project[] = [
   lithiumBattery,
@@ -15,6 +21,12 @@ export const PROJECTS: Project[] = [
   civilEngineering,
   safetyFootwear,
   foodTrade,
+  generalTrading,
+  pharmaManufacturing,
+  healthcareDevelopment,
+  smartTaxi,
+  manpowerSourcing,
+  digitalAdvertising,
 ];
 
 export function getProject(slug: string): Project | undefined {

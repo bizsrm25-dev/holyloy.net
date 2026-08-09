@@ -1,0 +1,11 @@
+.head {
+  max-width: 46ch;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.heading { font-size: var(--step-3); }
+
+.body {
+  margin-top: 1rem;
+  color: var(--c-graphite);
+}

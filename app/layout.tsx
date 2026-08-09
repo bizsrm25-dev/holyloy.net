@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Geist, Geist_Mono } from "next/font/google";
+import GSAPProvider from "@/components/gsap/GSAPProvider";
 import "@/styles/tokens.css";
 import "@/styles/base.css";
 
@@ -40,7 +41,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className={`${archivo.variable} ${geist.variable} ${geistMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <GSAPProvider>{children}</GSAPProvider>
+      </body>
     </html>
   );
 }

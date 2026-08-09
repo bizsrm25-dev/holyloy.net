@@ -1,0 +1,14 @@
+.band { padding-block: var(--band); }
+
+.dark { background: var(--c-night); }
+
+.light {
+  background: var(--c-card);
+  border-block: 1px solid var(--c-hairline);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}

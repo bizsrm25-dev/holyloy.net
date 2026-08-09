@@ -1,0 +1,36 @@
+.band {
+  background: var(--c-night);
+  padding-block: var(--band);
+}
+
+.inner { display: grid; gap: 2rem; }
+
+.heading {
+  color: #FFFFFF;
+  font-size: var(--step-3);
+  max-width: 18ch;
+}
+
+.points { display: grid; gap: 0.75rem; align-content: start; }
+
+.point {
+  position: relative;
+  padding-left: 1.25rem;
+  color: #B8B4B0;
+  font-size: 0.9375rem;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 8px;
+  height: 1px;
+  background: var(--c-red);
+}
+
+@media (min-width: 900px) {
+  .inner { grid-template-columns: 1fr 1fr; }
+  .cta { grid-column: 1 / -1; }
+}

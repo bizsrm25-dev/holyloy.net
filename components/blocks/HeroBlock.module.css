@@ -1,0 +1,35 @@
+.hero {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: var(--band);
+}
+
+.inner {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.tagline {
+  font-size: var(--step-4);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.thesis {
+  margin-top: 1.25rem;
+  font-size: var(--step-1);
+  color: var(--c-graphite);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--c-hairline);
+}
+
+@media (min-width: 900px) {
+  .inner { grid-template-columns: 1fr 1.1fr; }
+}

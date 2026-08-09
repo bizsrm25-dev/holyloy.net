@@ -25,11 +25,11 @@
 .on {
   background: var(--c-red);
   border-color: var(--c-red);
-  color: #FFFFFF;
+  color: var(--c-on-red);
 }
 
 .on:hover {
   background: var(--c-red-press);
   border-color: var(--c-red-press);
-  color: #FFFFFF;
+  color: var(--c-on-red);
 }

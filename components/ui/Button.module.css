@@ -14,7 +14,7 @@
 
 .button:active { transform: scale(0.98); }
 
-.primary { background: var(--c-red); color: #FFFFFF; }
+.primary { background: var(--c-red); color: var(--c-on-red); }
 .primary:hover { background: var(--c-red-press); }
 
 .secondary {

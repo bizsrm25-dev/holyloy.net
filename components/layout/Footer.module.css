@@ -21,7 +21,7 @@
 }
 
 .links a { transition: color 0.2s; }
-.links a:hover { color: var(--c-red); }
+.links a:hover { color: var(--c-red-text); }
 
 .legal { font-size: 0.8125rem; color: var(--c-muted); }
 

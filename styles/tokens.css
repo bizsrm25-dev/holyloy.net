@@ -2,13 +2,27 @@
   --c-red: #DC0000;
   --c-red-press: #A80000;
   --c-red-wash: #FFF0F0;
+
+  /* Red used as TEXT rather than as a fill. Identical to --c-red in light mode.
+     On dark grounds #DC0000 only reaches 3.72:1, below AA, so the text tint is
+     lifted in the dark block while every red FILL stays exactly #DC0000. */
+  --c-red-text: #DC0000;
+
   --c-ink: #121212;
   --c-graphite: #3F3F3F;
-  --c-muted: #767676;
+  /* #767676 measured 4.29:1 on canvas and 4.10:1 on the red wash. Both failed AA. */
+  --c-muted: #6F6F6F;
   --c-hairline: #E5E1DD;
   --c-canvas: #FAF8F6;
   --c-card: #FFFFFF;
   --c-night: #101010;
+
+  /* Text sitting on a fixed-colour ground. --c-night and --c-red do not change
+     between light and dark mode, so text on them must not change either. These
+     are deliberately absent from the dark-mode block below. */
+  --c-on-night: #F4F2F0;
+  --c-on-night-muted: #9A9A9A;
+  --c-on-red: #FFFFFF;
 
   --r-control: 8px;
   --r-card: 16px;
@@ -36,6 +50,7 @@
   :root {
     --c-red: #DC0000;
     --c-red-press: #A80000;
+    --c-red-text: #FF3B30;
     --c-red-wash: #2A0F0F;
     --c-ink: #F4F2F0;
     --c-graphite: #B8B4B0;

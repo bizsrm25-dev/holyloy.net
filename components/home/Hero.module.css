@@ -15,7 +15,7 @@
   letter-spacing: -0.035em;
 }
 
-.accent { color: var(--c-red); }
+.accent { color: var(--c-red-text); }
 
 .subtext {
   margin-top: 1.5rem;

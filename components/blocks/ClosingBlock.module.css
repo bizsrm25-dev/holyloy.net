@@ -6,7 +6,7 @@
 .inner { display: grid; gap: 2rem; }
 
 .heading {
-  color: #FFFFFF;
+  color: var(--c-on-night);
   font-size: var(--step-3);
   max-width: 18ch;
 }
@@ -16,7 +16,7 @@
 .point {
   position: relative;
   padding-left: 1.25rem;
-  color: #B8B4B0;
+  color: var(--c-on-night-muted);
   font-size: 0.9375rem;
 }
 

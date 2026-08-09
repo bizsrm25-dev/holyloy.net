@@ -18,7 +18,7 @@
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--c-red);
+  color: var(--c-red-text);
 }
 
 .title { margin-top: 0.5rem; font-size: var(--step-1); }

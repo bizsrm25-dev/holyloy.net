@@ -28,7 +28,7 @@
   transition: color 0.2s;
 }
 
-.link:hover { color: var(--c-red); }
+.link:hover { color: var(--c-red-text); }
 
 .cta { display: none; }
 

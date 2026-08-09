@@ -12,7 +12,7 @@
 }
 
 .summary::-webkit-details-marker { display: none; }
-.summary::after { content: " +"; color: var(--c-red); }
+.summary::after { content: " +"; color: var(--c-red-text); }
 .details[open] .summary::after { content: " -"; }
 
 .body { padding-bottom: 1.5rem; }

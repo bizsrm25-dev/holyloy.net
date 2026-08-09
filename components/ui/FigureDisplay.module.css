@@ -18,5 +18,5 @@
 
 .note { font-size: 0.75rem; color: var(--c-muted); }
 
-.dark .value { color: #FFFFFF; }
-.dark .label, .dark .note { color: #9A9A9A; }
+.dark .value { color: var(--c-on-night); }
+.dark .label, .dark .note { color: var(--c-on-night-muted); }

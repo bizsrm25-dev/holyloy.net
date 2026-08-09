@@ -14,7 +14,7 @@
 
 .hasImage { padding: 1rem; }
 
-.icon { color: var(--c-red); }
+.icon { color: var(--c-red-text); }
 
 .title { font-size: var(--step-1); }
 

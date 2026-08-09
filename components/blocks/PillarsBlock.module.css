@@ -1,0 +1,27 @@
+.section { padding-block: var(--band); }
+
+.grid { display: grid; gap: 1rem; }
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--c-hairline);
+  border-radius: var(--r-card);
+  background: var(--c-card);
+}
+
+.hasImage { padding: 1rem; }
+
+.icon { color: var(--c-red); }
+
+.title { font-size: var(--step-1); }
+
+.body { font-size: 0.9375rem; color: var(--c-graphite); }
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(6, 1fr); }
+  .cell { grid-column: span 2; }
+  .wide { grid-column: span 4; }
+}

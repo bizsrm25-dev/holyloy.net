@@ -61,10 +61,14 @@ const unmatched = [];
 
 for (const file of files) {
   const stem = basename(file, extname(file));
+  // Generators commonly append their own suffixes, e.g. "001_2K_202608172044".
+  // A leading three-digit run is treated as the manifest index.
+  const prefix = /^(\d{3})(?:\D|$)/.exec(stem)?.[1];
   const target =
     byFullPath.get(file) ??
     byBasename.get(`${stem}.jpg`) ??
-    byIndex.get(stem.padStart(3, "0"));
+    byIndex.get(stem.padStart(3, "0")) ??
+    (prefix ? byIndex.get(prefix) : undefined);
 
   if (!target) {
     unmatched.push(file);

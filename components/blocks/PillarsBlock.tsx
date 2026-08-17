@@ -26,7 +26,7 @@ export default function PillarsBlock({ block }: { block: Block }) {
                 <ImageSlot
                   src={item.image}
                   alt={item.title}
-                  ratio="16 / 10"
+                  ratio="16 / 9"
                   sizes="(max-width: 767px) 100vw, 40vw"
                 />
               ) : (

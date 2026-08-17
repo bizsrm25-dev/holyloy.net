@@ -44,12 +44,15 @@ export function useCountUp(target: number, duration = 1.4) {
         // once the tween is genuinely progressing, otherwise the render at
         // progress 0 stamps a misleading "0" over a correct value and leaves it
         // there if the ticker never advances.
-        const tween = gsap.to(counter, {
+        gsap.to(counter, {
           value: target,
           duration,
           ease: "power2.out",
           onUpdate: () => {
-            if (tween.progress() > 0) {
+            // Guard on the counter itself, never on the tween. GSAP fires
+            // onUpdate during construction, so referencing the tween binding
+            // from inside its own config throws a TDZ ReferenceError.
+            if (counter.value > 0) {
               el.textContent = format(counter.value, decimals);
             }
           },

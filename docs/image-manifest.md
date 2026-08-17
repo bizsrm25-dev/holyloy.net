@@ -63,12 +63,12 @@ phone near a card terminal mid-transaction. The shopkeeper is a soft blurred
 presence behind the counter. Shelves recede into warm shadow. Red accent: the
 terminal's status light. Leave the left third open and uncluttered.
 
-### 002 · `home/pillar-loyalty.jpg` · 16:10 · Treatment A
+### 002 · `home/pillar-loyalty.jpg` · 16:9 · Treatment A
 A neighbourhood bakery counter, hands passing a paper bag across to a regular
 customer, both figures cropped at the shoulders. Warm interior, worn wooden
 counter. Red accent: the server's apron tie.
 
-### 003 · `home/pillar-sustainability.jpg` · 16:10 · Treatment A
+### 003 · `home/pillar-sustainability.jpg` · 16:9 · Treatment A
 Flattened cardboard stacked neatly beside sorted recycling crates in a service
 lane behind a row of shops, early morning light. Orderly, not squalid. Red accent:
 one plastic crate.
@@ -152,7 +152,7 @@ Red accent: the vehicle.
 Vertical. Looking up the length of a single tilted solar panel row, strong
 perspective, sand and gravel underfoot. Red accent: a cable tag.
 
-### 020 · `projects/solar-energy-epc.jpg` · 16:10 · Treatment A
+### 020 · `projects/solar-energy-epc.jpg` · 16:9 · Treatment A
 Two engineers in high-visibility gear installing a panel on a mounting frame, seen
 from behind at middle distance. Working, not posing. Red accent: a hard hat.
 
@@ -172,7 +172,7 @@ handrail on the tower.
 Vertical. A cluster of tower cranes over a large urban development at dusk, shot
 from below, strong vertical emphasis. Red accent: a crane counterweight marking.
 
-### 024 · `projects/cement-plant-urban.jpg` · 16:10 · Treatment A
+### 024 · `projects/cement-plant-urban.jpg` · 16:9 · Treatment A
 Aerial view of a newly built residential district, repeating rooflines and fresh
 road grid, sand at the development edge. Red accent: one roof canopy.
 
@@ -227,7 +227,7 @@ A worker's boots and lower legs on a steel walkway at an industrial site, shot
 from above at a slight angle. Grit, wear, competence. Red accent: a floor marking
 stripe.
 
-### 035 · `projects/safety-footwear-regulation.jpg` · 16:10 · Treatment A
+### 035 · `projects/safety-footwear-regulation.jpg` · 16:9 · Treatment A
 A row of workers in full protective gear walking away from camera across a large
 construction site. Order and scale. Red accent: one helmet.
 
@@ -377,7 +377,7 @@ signage panel with no readable text.
 Vertical. A retail pharmacy aisle seen down its length, shelves of unbranded boxes
 receding, clean lighting. Red accent: a shelf edge strip.
 
-### 068 · `projects/healthcare-development-intelligence.jpg` · 16:10 · Treatment A
+### 068 · `projects/healthcare-development-intelligence.jpg` · 16:9 · Treatment A
 A hospital pharmacy stock room with an operator checking inventory on a handheld
 scanner, shelving in ordered rows. Red accent: a bin label.
 
@@ -393,7 +393,7 @@ front, roof sign visible but bearing no readable text.
 A white sedan taxi waiting at a city intersection at blue hour, skyline behind,
 light trails from passing traffic. Red accent: a traffic signal.
 
-### 071 · `projects/smart-taxi-city.jpg` · 16:10 · Treatment A
+### 071 · `projects/smart-taxi-city.jpg` · 16:9 · Treatment A
 A wide Riyadh boulevard at dusk from an elevated viewpoint, dense traffic flowing,
 towers behind. Red accent: massed tail lights.
 
@@ -413,7 +413,7 @@ A skilled tradesperson in protective gear working on equipment at a large
 industrial site, shot in profile at a respectful distance, city towers rising in
 the far background. Red accent: a hard hat.
 
-### 074 · `projects/manpower-sourcing-office.jpg` · 16:10 · Treatment A
+### 074 · `projects/manpower-sourcing-office.jpg` · 16:9 · Treatment A
 A clean modern corporate office building exterior in a Saudi business district,
 morning light, few people. Red accent: an entrance canopy edge.
 
@@ -430,7 +430,7 @@ A tall digital signage tower over a city boulevard at blue hour, screen glowing
 with abstract gradient light, traffic below. **The screen must carry no text or
 imagery, only abstract colour.** Red accent: the screen's dominant hue.
 
-### 077 · `projects/digital-advertising-giga.jpg` · 16:10 · Treatment A
+### 077 · `projects/digital-advertising-giga.jpg` · 16:9 · Treatment A
 A mega development site ringed by tall construction hoarding, a digital display
 mounted on the hoarding showing abstract colour. Red accent: the hoarding trim.
 

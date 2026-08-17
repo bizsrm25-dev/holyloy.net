@@ -4,6 +4,8 @@ Marketing site for **HolyLoy**, a loyalty and rewards ecosystem connecting
 consumers, businesses and communities, and the home of a portfolio of twelve
 ventures across Saudi Arabia.
 
+Live at **https://holyloynet.vercel.app**
+
 Two surfaces only: a homepage, and a projects section with an index and twelve
 detail pages. There is no CMS and there are no forms; every call to action is a
 link, and all content is typed data in the repository.
@@ -67,13 +69,30 @@ otherwise rot as content gets edited:
 
 ## Imagery
 
-The site references 81 images under `public/images/` that have not been generated
-yet. `.env` ships `NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING=1`, which makes `ImageSlot`
-render a sized, labelled placeholder holding the correct aspect ratio, so layout
-does not shift when real assets land.
+All 81 images are in place under `public/images/`, generated to the briefs in
+`docs/image-manifest.md`. They follow two treatments, location documentary and
+product still life, sharing one rule: **red is an object in the frame, never a
+colour filter.** That is what ties the photography to the logo without tinting
+anything.
 
-Set it to `0` once the images exist. The conformance suite will then fail listing
-every file still missing, which is the remaining checklist.
+Source files are 2000px JPEGs at quality 82. Next.js resizes and converts to WebP
+on delivery, so do not pre-optimise replacements beyond that.
+
+`ImageSlot` still supports a placeholder mode. Setting
+`NEXT_PUBLIC_HOLYLOY_IMAGES_PENDING=1` in `.env` swaps every image for a sized,
+labelled box holding the correct aspect ratio, which is useful when adding new
+slots before their assets exist. It ships as `0`.
+
+To replace or add images, drop files into a folder named either by their target
+filename or by their manifest index, then run:
+
+```bash
+node scripts/place-images.mjs <folder>
+```
+
+The script reports anything unmatched and lists what is still missing. The asset
+assertion in `tests/content-conformance.test.ts` then fails loudly for any
+reference that does not resolve.
 
 ## Documentation
 
